@@ -1,0 +1,108 @@
+/* Swiggy.css */
+
+/* Default styles */
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+  border: 2px solid red;
+  align-items: center;
+}
+
+.nav-items > ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-items > ul > li {
+  padding-left: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.img {
+  height: 80px;
+  width: 150px;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+}
+.card-items {
+  display: flex;
+  flex-direction: column;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  width: 250px;
+  align-items: flex-start;
+  margin: 0px 10px;
+}
+
+.card img {
+  margin-bottom: 10px;
+  height: 160px;
+  width: 250px;
+  object-fit: cover;
+}
+
+.card h2 {
+  margin: 5px 0px;
+  padding-left: 0px;
+  text-align: left;
+}
+
+.card h3 {
+  margin: 0px 0px;
+  padding-left: 0px;
+  height: 60px;
+  text-align: left;
+}
+
+.card h4 {
+  margin: 0px 0px;
+  padding-left: 0px;
+  text-align: left;
+}
+
+.food-items {
+  display: flex;
+}
+
+@media only screen and (max-width: 480px) {
+  /* Override card layout for smaller screens */
+  .card-items {
+    display: flex;
+    flex-direction: column;
+  }
+  .card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* text-align: center; */
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .food-items {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  .card img {
+    border: 10px solid red;
+    width: 130px;
+    height: 150px;
+    object-fit: cover;
+  }
+  .prop {
+    display: flex;
+    flex-direction: column;
+  }
+}
